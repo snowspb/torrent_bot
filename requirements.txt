@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+cachetools
+python-telegram-bot
+python-decouple
+telegram

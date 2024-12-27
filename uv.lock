@@ -14,6 +14,15 @@ wheels = [
 ]
 
 [[package]]
+name = "cachetools"
+version = "5.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c3/38/a0f315319737ecf45b4319a8cd1f3a908e29d9277b46942263292115eee7/cachetools-5.5.0.tar.gz", hash = "sha256:2cc24fb4cbe39633fb7badd9db9ca6295d766d9c2995f245725a46715d050f2a", size = 27661 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a4/07/14f8ad37f2d12a5ce41206c21820d8cb6561b728e51fad4530dff0552a67/cachetools-5.5.0-py3-none-any.whl", hash = "sha256:02134e8439cdc2ffb62023ce1debca2944c3f289d66bb17ead3ab3dede74b292", size = 9524 },
+]
+
+[[package]]
 name = "certifi"
 version = "2024.12.14"
 source = { registry = "https://pypi.org/simple" }
@@ -80,11 +89,21 @@ wheels = [
 ]
 
 [[package]]
+name = "lbry-libtorrent"
+version = "1.2.4"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/db/7b/87e2b9402c3154145ff54422a416f597490bceecc2c203abb0c57b8f2c53/lbry_libtorrent-1.2.4-py3-none-any.whl", hash = "sha256:dedfdbc83c0243676e4e7e709cb47d9da142fa39e2fae18513c9b310baf222b4", size = 2397425 },
+]
+
+[[package]]
 name = "python-template"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "beautifulsoup4" },
+    { name = "cachetools" },
+    { name = "lbry-libtorrent" },
     { name = "requests" },
     { name = "telegram" },
 ]
@@ -92,6 +111,8 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.12.3" },
+    { name = "cachetools", specifier = ">=5.5.0" },
+    { name = "lbry-libtorrent", specifier = ">=1.2.4" },
     { name = "requests", specifier = ">=2.32.3" },
     { name = "telegram", specifier = ">=0.0.1" },
 ]

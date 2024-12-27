@@ -2,10 +2,12 @@
 name = "python-template"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Alexey_SnowSPb"]
 requires-python = ">=3.11"
 dependencies = [
     "beautifulsoup4>=4.12.3",
+    "cachetools>=5.5.0",
+    "lbry-libtorrent>=1.2.4",
     "requests>=2.32.3",
     "telegram>=0.0.1",
 ]
